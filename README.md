@@ -1,11 +1,11 @@
-MINIMAL SCRAPER
+MINIMAL SCRAPER for Product Analysis
 
 Asyncio
 
 TASK:
 1. Use async libraries to get all the links on a given webpage
-  2. Get the parsed links
-  3. Minimal scraper project
+2. Get the parsed links
+3. Minimal scraper project
 
 
 Input takes the depth parameter
