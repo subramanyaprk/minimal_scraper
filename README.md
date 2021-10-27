@@ -17,13 +17,13 @@ That level of depth should be traversed to get the links
  
  Pip install the dependencies - 
  
-** pip install aiohttp
+**pip install aiohttp
  pip install asyncio
- pip intsall requests**
+ pip intsall requests
  
  Run the Python file fetch_url.py:
  
-** python3 fetch_url.py**
+**python3 fetch_url.py
  
  Working:
  
