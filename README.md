@@ -32,4 +32,8 @@ Run the Python file fetch_url.py:
  
 Working:
  
+The start_time is stored in an array for each URL, and the time taken is calculated and printed. The fetch_urls calls the ensure_future function to make sure the URLs finish fetching.
+
 The fetch_async sets up the event loops and uses the run_until_complete to wait till all the URL fetches are completed to pass the control back so we can print the total time taken.
+
+
