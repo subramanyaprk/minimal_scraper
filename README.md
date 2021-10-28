@@ -28,7 +28,7 @@ Pip install the dependencies -
  
 Run the Python file fetch_url.py:
  
-**python3 fetch_url.py**
+**python3 web_scrap.py**
  
 Working:
  
