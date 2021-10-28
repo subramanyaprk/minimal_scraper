@@ -1,5 +1,6 @@
 import aiohttp
 import asyncio
+from bs4 import BeautifulSoup
 
 async def get_page(session,url):
     async with session.get(url) as r:
@@ -18,12 +19,22 @@ async def main(urls):
         data = await get_all(session, urls)
         return data
 
+def parse(results):
+    for html in results:
+        soup = BeautifulSoup(html)
+        print(soup.find('form',{'class': 'form-horizontal'}).text.strip())
+
+
+
+
 if __name__ == '__main__':
     urls = [
-            "https://www.google.com/",
-            "https://www.youtube.com/",
-            "https://github.com/"
+            'https://books.toscrape.com/catalogue/page-1.html',
+            'https://books.toscrape.com/catalogue/page-2.html',
+            'https://books.toscrape.com/catalogue/page-3.html',
     ]
     
     results = asyncio.run(main(urls))
     print(results)
+
+    print(parse(results))
